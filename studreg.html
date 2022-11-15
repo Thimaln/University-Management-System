@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<title> STUDENT REGISTRATION </title>
+	<link rel="stylesheet" href="../css/studreg.css" type="text/css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="utf-8">
+
+<head>
+	<body>
+	<div class="banner">
+		<div class="navbar">
+			<ul>
+				<li><a href="/ITP/home.html">Home</a></li>		
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="studentlog.html">Login</a></li>
+			</ul>
+		</div>
+
+
+
+
+
+
+
+	
+</head>
+	<body>
+		<h1> Academy Of Information Technology <br> Student registration Form </h1>
+		<table align="center" cellpadding="10">
+		<form onSubmit = "return checkPassword(this)" action="../php/studreg.php" method="post" target="_blank">
+			<tr>
+				<td> First Name : </td>
+				<td><input type="text" id="name" name="firstName" placeholder="Enter First name" required></td>
+			</tr>	
+			<tr>
+				<td> Last Name : </td>
+				<td><input type="text" id="name" name="lastName" placeholder="Enter Last name" required></td>
+			</tr>	
+			<tr>
+				<td> Email : </td>
+				<td><input type="email" id="name" pattern="[a-z0-9._%+-]+@[a-z0-9._%+-]+\.[a-z]{2,3}$"  name="email" placeholder="Enter email Address" required></td>
+			</tr>	
+			<tr>
+				<td> Password : </td>
+				<td><input type="password" id="name" name="password" placeholder="Enter password" required></td>
+			</tr>	
+			<tr>
+				<td> Date of Birth : </td>
+				<td><input type="date" id="name" name="dateofbirth" required ></td>
+			</tr>	
+			
+			<tr>
+				<td> Mobile Number : </td>
+				<td><input type="number" id="name"  pattern="[0-9]{10}" name="mobilenumber" placeholder="0712345678" required></td>
+			</tr>
+			<tr>
+				<td> Gender : </td>
+				<td> Male <input type="radio" name="gender" value="m" id="male" required> 
+					Fe-Male<input type="radio" name="gender" value="f" id="female" required> 
+				</td>
+				
+			</tr>
+			<tr>
+				<td> Address: </td>
+				<td><textarea rows="6" cols="25"
+				placeholder="Enter address" name="address" id="address" required> </textarea></td>
+			</tr>
+			<tr>
+				<td> Course Applied For: </td>
+				<td><input type="radio"  name="course">Information Technology<br>
+				<input type="radio" name="course">Cyber Srcurity<br>
+				<input type="radio" name="course">Software Engineer</td>
+			</tr>
+			
+			<tr>
+				<td align="center" colspan="2">
+				<input type="submit" value="submit">
+				&nbsp;&nbsp;<input type="submit"
+				value="reset">
+				</td>
+			</tr>
+	</form>		
+			
+			
+	</body>		
+
+
+
+
+
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
